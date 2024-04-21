@@ -1,21 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar >
     <ion-title>
-      Blank
+      <img src="../../assets/pictures/logo.png">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true" class="ion-padding">
   <div class="container">
-    <div class="notification is-warning">
-      This is a primary notification - check it out!
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="notification is-warning has-text-centered">
+          <input class="file-input" type="file" accept="image/*">
+          <ion-icon name="images-outline" class="fa-lg"></ion-icon>
+          <p class="mt-2">Upload an image from your gallery</p>
+        </div>
+      </div>
     </div>
   </div>
 </ion-content>
