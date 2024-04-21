@@ -1,0 +1,7 @@
+{
+  "name": "piclab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
