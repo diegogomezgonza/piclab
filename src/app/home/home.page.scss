@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+
+//Toolbar con PicLab
+
+.home-title {
+  background-color: #03020e;
+  text-align: center;
+}
+
+//Logo de PicLab
+.piclab-logo{
+  width: 8em;
+}
+
+//Botón de galería
+.gallery-button{
+  width: 7em;
+  display: block;
+  margin: 0 auto;
+}
+
+//Imagen
+.is-centered-horizontally {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uploaded-image{
+  max-width: 15em;
+}
+
+//Iconos
+.delete-icon {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.action-buttons{
+  font-size: 2em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+
+
