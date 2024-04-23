@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #03020e;
 
   margin: 0;
 }
@@ -31,11 +31,12 @@
 .home-title {
   background-color: #03020e;
   text-align: center;
+  margin-top: 3em;
 }
 
 //Logo de PicLab
 .piclab-logo{
-  width: 8em;
+  width: 10em;
 }
 
 //Botón de galería
@@ -68,5 +69,19 @@
   justify-content: center;
 }
 
+//Header
+ion-header{
+  --ion-background-color:#03020e;
+}
+
+//Content
+ion-content{
+
+  --ion-background-color:#03020e;
+}
+
+ion-toolbar{
+  --background: #03020e;
+}
 
 
