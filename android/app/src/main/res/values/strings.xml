@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">piclab</string>
+    <string name="title_activity_main">piclab</string>
+    <string name="package_name">com.piclab.app</string>
+    <string name="custom_url_scheme">com.piclab.app</string>
+</resources>
