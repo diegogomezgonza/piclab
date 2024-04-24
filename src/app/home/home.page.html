@@ -1,3 +1,11 @@
+<ion-header class="home-header">
+  <ion-toolbar>
+    <ion-title class="home-title">
+      <img src="../../assets/pictures/logo.png" class="piclab-logo">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true" class="home-content ion-padding">
   <div class="container">
     <div class="columns is-centered">
@@ -13,19 +21,19 @@
           <!-- Imagen cargada -->
           <img [src]="selectedImage" class="filtered-image is-centered-horizontally" [ngClass]="selectedFilter" />
           <!-- Filtros -->
-          <div class="filter-buttons mt-2">
-            <div class="slider">
-              <div class="slider-content">
-                <!-- Filtros -->
-                <button class="filter-button" (click)="applyFilter('grayscale')">Grayscale</button>
-                <button class="filter-button" (click)="applyFilter('sepia')">Sepia</button>
-                <button class="filter-button" (click)="applyFilter('blur')">Blur</button>
-                <button class="filter-button" (click)="applyFilter('invert')">Invertir colores</button>
-                <button class="filter-button" (click)="applyFilter('min-saturate')">Saturación mínima</button>
-                <button class="filter-button" (click)="applyFilter('low-contrast')">Contraste bajo</button>
-                <button class="filter-button" (click)="applyFilter('blacklight')">Luz negra</button>
-              </div>
-            </div>
+
+
+          <div class="scrolling-wrapper">
+            <div class="filter-buttons mt-2">
+              <!-- Filtros -->
+              <button class="filter-button" (click)="applyFilter('grayscale')">Grayscale</button>
+              <button class="filter-button" (click)="applyFilter('sepia')">Sepia</button>
+              <button class="filter-button" (click)="applyFilter('blur')">Blur</button>
+              <button class="filter-button" (click)="applyFilter('invert')">Invertir colores</button>
+              <button class="filter-button" (click)="applyFilter('min-saturate')">Saturación mínima</button>
+              <button class="filter-button" (click)="applyFilter('low-contrast')">Contraste bajo</button>
+              <button class="filter-button" (click)="applyFilter('blacklight')">Luz negra</button>
+        </div>
           </div>
           <!-- Botones -->
           <div class="footer-buttons ion-fixed">
