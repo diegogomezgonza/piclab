@@ -96,6 +96,14 @@ ion-toolbar{
   margin-top: 1em;
 }
 
+.slider {
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex; /* Alinear los botones en una fila */
+}
+
 .filtered-image {
   max-width: 15em;
 }
@@ -111,6 +119,23 @@ ion-toolbar{
 .blur {
   filter: blur(5px);
 }
+
+.invert {
+  filter: invert(100%);
+}
+
+.min-saturate {
+  filter: saturate(0%);
+}
+
+.low-contrast {
+  filter: contrast(0.5);
+}
+
+.blacklight {
+  filter: brightness(150%) saturate(100%) hue-rotate(-90deg);
+}
+
 
 
 

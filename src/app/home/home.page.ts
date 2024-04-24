@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,23 @@ import { Component } from '@angular/core';
 export class HomePage {
   selectedImage: string | ArrayBuffer = ''; // Variable para almacenar la imagen seleccionada
   selectedFilter: string = '';
+  
+  @ViewChild('swiper', { static: false }) swiperContainer: any;
 
   constructor() {}
+
+  ngAfterViewInit() {
+    // Inicializa Swiper.js
+    new Swiper(this.swiperContainer.nativeElement, {
+      slidesPerView: 'auto', // Muestra tantos botones como quepan en el contenedor
+      spaceBetween: 10, // Espacio entre los botones
+      freeMode: true, // Desplazamiento libre
+      scrollbar: {
+        el: '.swiper-scrollbar', // Selector del scrollbar
+      },
+    });
+  }
+
 
   // Método que se ejecuta cuando se selecciona un archivo
   onFileSelected(event: any) {
