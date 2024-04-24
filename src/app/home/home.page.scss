@@ -136,6 +136,19 @@ ion-toolbar{
   filter: brightness(150%) saturate(100%) hue-rotate(-90deg);
 }
 
+//Scroll de filtros
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
 
 
