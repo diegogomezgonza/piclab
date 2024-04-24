@@ -1,4 +1,4 @@
-package com.piclab.app;
+package piclab.com;
 
 import com.getcapacitor.BridgeActivity;
 

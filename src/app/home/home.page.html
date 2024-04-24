@@ -1,11 +1,3 @@
-<ion-header class="home-header">
-  <ion-toolbar>
-    <ion-title class="home-title">
-      <img src="../../assets/pictures/logo.png" class="piclab-logo">
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" class="home-content ion-padding">
   <div class="container">
     <div class="columns is-centered">
@@ -19,12 +11,27 @@
         <!-- Mostrar la imagen cargada y los botones de acción -->
         <div class="has-text-centered" *ngIf="selectedImage">
           <!-- Imagen cargada -->
-          <img [src]="selectedImage" class="uploaded-image is-centered-horizontally" />
+          <img [src]="selectedImage" class="filtered-image is-centered-horizontally" [ngClass]="selectedFilter" />
+          <!-- Filtros -->
+          <div class="filter-buttons mt-2">
+            <div class="slider">
+              <div class="slider-content">
+                <!-- Filtros -->
+                <button class="filter-button" (click)="applyFilter('grayscale')">Grayscale</button>
+                <button class="filter-button" (click)="applyFilter('sepia')">Sepia</button>
+                <button class="filter-button" (click)="applyFilter('blur')">Blur</button>
+                <button class="filter-button" (click)="applyFilter('invert')">Invertir colores</button>
+                <button class="filter-button" (click)="applyFilter('min-saturate')">Saturación mínima</button>
+                <button class="filter-button" (click)="applyFilter('low-contrast')">Contraste bajo</button>
+                <button class="filter-button" (click)="applyFilter('blacklight')">Luz negra</button>
+              </div>
+            </div>
+          </div>
           <!-- Botones -->
-          <div class="action-buttons mt-2">
-            <i class="delete-icon fa-regular fa-trash-can" style="color: #fb0404;"(click)="deleteImage()"></i>
+          <div class="footer-buttons ion-fixed">
+            <i class="delete-icon fa-regular fa-trash-can" style="color: #fb0404;" (click)="deleteImage()"></i>
             <i class="action-icon fa-solid fa-share" style="color: #FFD43B;"></i>
-            <i class="action-icon fa-solid fa-file-arrow-down"  style="color: #FFD43B;"></i>
+            <i class="action-icon fa-solid fa-file-arrow-down" style="color: #FFD43B;" (click)="downloadImage()"></i>
             <i class="fa-regular fa-pen-to-square" style="color: #74C0FC;"></i>
           </div>
         </div>
@@ -32,4 +39,3 @@
     </div>
   </div>
 </ion-content>
-

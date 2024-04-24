@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.piclab.app',
+  appId: 'piclab.com',
   appName: 'piclab',
-  webDir: 'www'
+  webDir: 'my-app'
 };
 
 export default config;

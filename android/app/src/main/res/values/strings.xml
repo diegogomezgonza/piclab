@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">piclab</string>
     <string name="title_activity_main">piclab</string>
-    <string name="package_name">com.piclab.app</string>
-    <string name="custom_url_scheme">com.piclab.app</string>
+    <string name="package_name">piclab.com</string>
+    <string name="custom_url_scheme">piclab.com</string>
 </resources>
