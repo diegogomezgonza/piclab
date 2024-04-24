@@ -1,0 +1,11 @@
+{
+  "appId": "piclab.com",
+  "appName": "piclab",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
