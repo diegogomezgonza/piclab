@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   selectedImage: string | ArrayBuffer = ''; // Variable para almacenar la imagen seleccionada
+  selectedFilter: string = '';
 
   constructor() {}
 
@@ -17,6 +18,7 @@ export class HomePage {
       const reader = new FileReader(); // Crea un objeto FileReader
       reader.onload = (e: any) => {
         this.selectedImage = e.target.result; // Almacena la imagen seleccionada en la variable
+        this.selectedFilter = ''; // Reinicia el filtro seleccionado al cargar una nueva imagen
       };
       reader.readAsDataURL(file); // Lee el contenido del archivo como URL
     }
@@ -25,6 +27,7 @@ export class HomePage {
   // Método para eliminar la imagen seleccionada
   deleteImage() {
     this.selectedImage = ''; // Vacía la variable que contiene la imagen
+    this.selectedFilter = ''; // Reinicia el filtro seleccionado al eliminar la imagen
   }
 
   // Método para descargar la imagen seleccionada
@@ -42,5 +45,9 @@ export class HomePage {
       // La imagen no es una URL válida
       console.error('No se puede descargar la imagen. La imagen no es una URL válida.');
     }
+  }
+
+  applyFilter(filterName: string) {
+    this.selectedFilter = filterName;
   }
 }

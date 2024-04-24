@@ -52,17 +52,20 @@
   margin-right: auto;
 }
 
-.uploaded-image{
-  max-width: 15em;
-}
-
-//Iconos
+//Botones
 .delete-icon {
   cursor: pointer;
   margin-top: 5px;
 }
 
-.action-buttons{
+.footer-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #03020e;
+  padding: 10px;
+  z-index: 1000;
   font-size: 2em;
   display: flex;
   gap: 2em;
@@ -83,5 +86,31 @@ ion-content{
 ion-toolbar{
   --background: #03020e;
 }
+
+//Filtros
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.filtered-image {
+  max-width: 15em;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
 
 
