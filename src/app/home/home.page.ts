@@ -26,4 +26,21 @@ export class HomePage {
   deleteImage() {
     this.selectedImage = ''; // Vacía la variable que contiene la imagen
   }
+
+  // Método para descargar la imagen seleccionada
+  downloadImage() {
+    // Verifica si la imagen es una URL válida
+    if (typeof this.selectedImage === 'string') {
+      // Crea un enlace temporal para descargar la imagen
+      const a = document.createElement('a');
+      a.href = this.selectedImage;
+      a.download = 'imagen'; // Nombre del archivo de descarga
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } else {
+      // La imagen no es una URL válida
+      console.error('No se puede descargar la imagen. La imagen no es una URL válida.');
+    }
+  }
 }

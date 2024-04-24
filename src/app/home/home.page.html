@@ -22,9 +22,9 @@
           <img [src]="selectedImage" class="uploaded-image is-centered-horizontally" />
           <!-- Botones -->
           <div class="action-buttons mt-2">
-            <i class="delete-icon fa-regular fa-trash-can" style="color: #fb0404;"(click)="deleteImage()"></i>
+            <i class="delete-icon fa-regular fa-trash-can" style="color: #fb0404;" (click)="deleteImage()"></i>
             <i class="action-icon fa-solid fa-share" style="color: #FFD43B;"></i>
-            <i class="action-icon fa-solid fa-file-arrow-down"  style="color: #FFD43B;"></i>
+            <i class="action-icon fa-solid fa-file-arrow-down" style="color: #FFD43B;" (click)="downloadImage()"></i>
             <i class="fa-regular fa-pen-to-square" style="color: #74C0FC;"></i>
           </div>
         </div>
@@ -32,4 +32,3 @@
     </div>
   </div>
 </ion-content>
-
