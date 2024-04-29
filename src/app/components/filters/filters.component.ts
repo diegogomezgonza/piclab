@@ -1,32 +1,16 @@
-import { Component, ViewChild } from '@angular/core';
-import Swiper from 'swiper';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-filters',
+  templateUrl: './filters.component.html',
+  styleUrls: ['./filters.component.scss'],
 })
-export class HomePage {
-  selectedImage: string | ArrayBuffer = ''; // Variable para almacenar la imagen seleccionada
+export class FiltersComponent  implements OnInit {
+  selectedImage: string | ArrayBuffer = '';
   selectedFilter: string = '';
+  constructor() { }
 
-  @ViewChild('swiper', { static: false }) swiperContainer: any;
-
-  constructor() {}
-
-  ngAfterViewInit() {
-    // Inicializa Swiper.js
-    new Swiper(this.swiperContainer.nativeElement, {
-      slidesPerView: 'auto', // Muestra tantos botones como quepan en el contenedor
-      spaceBetween: 10, // Espacio entre los botones
-      freeMode: true, // Desplazamiento libre
-      scrollbar: {
-        el: '.swiper-scrollbar', // Selector del scrollbar
-      },
-    });
-  }
-
-
+  ngOnInit() {}
   // Método que se ejecuta cuando se selecciona un archivo
   onFileSelected(event: any) {
     const file = event.target.files[0]; // Obtiene el archivo seleccionado
