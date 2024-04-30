@@ -22,15 +22,8 @@
           <img [src]="selectedImage" class="filtered-image is-centered-horizontally" [ngClass]="selectedFilter" />
           <!-- Filtros -->
             <app-filters></app-filters>
-
-
           <!-- Botones -->
-          <div class="footer-buttons ion-fixed">
-            <i class="delete-icon fa-regular fa-trash-can" style="color: #fb0404;" (click)="deleteImage()"></i>
-            <i class="action-icon fa-solid fa-share" style="color: #FFD43B;"></i>
-            <i class="action-icon fa-solid fa-file-arrow-down" style="color: #FFD43B;" (click)="downloadImage()"></i>
-            <i class="fa-regular fa-pen-to-square" style="color: #74C0FC;"></i>
-          </div>
+          <app-buttons></app-buttons>
         </div>
       </div>
     </div>

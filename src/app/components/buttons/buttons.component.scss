@@ -1,0 +1,19 @@
+//Botones
+.delete-icon {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.footer-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #03020e;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 2em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}

@@ -52,26 +52,6 @@
   margin-right: auto;
 }
 
-//Botones
-.delete-icon {
-  cursor: pointer;
-  margin-top: 5px;
-}
-
-.footer-buttons {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #03020e;
-  padding: 10px;
-  z-index: 1000;
-  font-size: 2em;
-  display: flex;
-  gap: 2em;
-  justify-content: center;
-}
-
 //Header
 ion-header{
   --ion-background-color:#03020e;
@@ -87,68 +67,5 @@ ion-toolbar{
   --background: #03020e;
 }
 
-//Filtros
-
-.filter-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-.slider {
-  overflow: hidden;
-}
-
-.slider-content {
-  display: flex; /* Alinear los botones en una fila */
-}
-
-.filtered-image {
-  max-width: 15em;
-}
-
-.grayscale {
-  filter: grayscale(100%);
-}
-
-.sepia {
-  filter: sepia(100%);
-}
-
-.blur {
-  filter: blur(5px);
-}
-
-.invert {
-  filter: invert(100%);
-}
-
-.min-saturate {
-  filter: saturate(0%);
-}
-
-.low-contrast {
-  filter: contrast(0.5);
-}
-
-.blacklight {
-  filter: brightness(150%) saturate(100%) hue-rotate(-90deg);
-}
-
-//Scroll de filtros
-
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  .card {
-    display: inline-block;
-  }
-}
-.scrolling-wrapper::-webkit-scrollbar {
-  display: none;
-}
 
 
